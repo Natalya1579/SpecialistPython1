@@ -9,4 +9,10 @@
 # 123
 # 1234
 
-# TODO: your code here
+number = int(input('Число: '))
+i = 1   # номер ряда
+row = i     # содержимое ряда
+while i <= number:
+    print(row)
+    i += 1
+    row = row * 10 + i
