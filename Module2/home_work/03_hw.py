@@ -28,4 +28,10 @@
 # 19 189.81 Rub.
 # 20 199.80 Rub.
 
-# TODO: your code here
+price = float(input('Стоимость товара: '))
+quantity = 1   # количество единиц товара
+total = 0
+while quantity <= 20:
+    total = quantity * price
+    print(quantity, "{:.2f}".format(total), 'Rub.')
+    quantity += 1
