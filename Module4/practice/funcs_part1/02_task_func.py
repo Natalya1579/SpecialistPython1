@@ -4,8 +4,12 @@
 # * попробуйте решить данную задачу, не преобразуя число к строке
 
 def palindrome(number):
-    pass
-
+    n_str = str(number)
+    n_rev = n_str[::-1]
+    if n_str == n_rev:
+        return True
+    else:
+        return False
 
 # Тестируем функцию
 print(palindrome(3454))
